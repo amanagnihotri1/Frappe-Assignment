@@ -1,0 +1,23 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-05-18 19:33:50.596400",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2024-05-18 19:38:28.778083",
+ "modified_by": "Administrator",
+ "module": "Custom App",
+ "name": "Updated Stock Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT * FROM `tabStock Ledger Entry`;",
+ "ref_doctype": "Stock Ledger Entry",
+ "report_name": "Updated Stock Report",
+ "report_type": "Query Report",
+ "roles": []
+}

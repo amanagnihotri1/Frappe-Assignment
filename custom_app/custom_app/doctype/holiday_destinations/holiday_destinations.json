@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-17 17:07:17.226861",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "holiday",
+  "site_name",
+  "city",
+  "country",
+  "pin_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "pin_code",
+   "fieldtype": "Int",
+   "label": "Pin Code"
+  },
+  {
+   "fieldname": "holiday",
+   "fieldtype": "Section Break",
+   "label": "Holiday Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-19 01:32:22.190944",
+ "modified_by": "Administrator",
+ "module": "Custom App",
+ "name": "Holiday Destinations",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
