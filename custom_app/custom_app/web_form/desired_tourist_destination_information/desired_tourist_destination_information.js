@@ -9,7 +9,7 @@ frappe.web_form.events.on('after_save',()=>
 })
 function sendEmailToUser(email) {
     frappe.call({
-        method: 'customer_management.customer_management.web_form.email_web_form.email_web_form.send_email',
+        method: 'custom_app.custom_app.web_form.desired_tourist_destination_information.desired_tourist_destination_information.send_email',
         args: {
             email: email 
         },
