@@ -1,7 +1,11 @@
 frappe.ready(function() {
-	let res = frappe.web_form.get_values();
-		let emaildata = res.email;
-		sendEmailToUser(emaildata);
+frappe.web_form.events.on('after_save',()=>
+    {
+        let res = frappe.web_form.get_values();
+            let emaildata = res.email;
+            console.log(emaildata)
+            sendEmailToUser(emaildata);
+    })
 })
 function sendEmailToUser(email) {
     frappe.call({
