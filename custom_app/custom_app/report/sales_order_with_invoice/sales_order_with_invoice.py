@@ -3,7 +3,7 @@
 
 import frappe
 
-def get_columns():
+def get_columns(): # function to define all the columns of report
     return [
         {"fieldname": "sales_order", "label": "Sales Order", "fieldtype": "Link", "options": "Sales Order", "width": 120},
         {"fieldname": "sales_order_item", "label": "Sales Order Item", "fieldtype": "Link", "options": "Sales Order Item", "width": 120},
@@ -14,7 +14,7 @@ def get_columns():
         {"fieldname": "invoiced_qty", "label": "Invoiced Quantity", "fieldtype": "Float", "width": 100}
     ]
 
-def get_data(filters):
+def get_data(filters): #function to get curated data according to filters using SQL query
     sales_order_items = frappe.db.sql("""
         SELECT
             slo.name AS sales_order,
