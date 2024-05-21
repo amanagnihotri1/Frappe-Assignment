@@ -4,10 +4,10 @@ def get_context(context):
 	# do your magic here
 	pass
 @frappe.whitelist(allow_guest=True)
-def send_email(email):
+def send_email(email): # function to send Email Address to given email Id
     try:
-        # Trigger email 
-        frappe.sendmail(
+        # This function triggers email sending to email address provided as argument 
+        frappe.sendmail( 
             recipients=email,  
             subject='Customer registration', 
             content='Thank you for registering with us!', 
